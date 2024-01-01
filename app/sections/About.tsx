@@ -40,12 +40,12 @@ const About = () => {
                     <div className="about-img">
                         
                         <div className="card">
-    <div className="circle"></div>
-    <div className="circle"></div>
-    <div className="card-inner">
-    <img src="./me.png" />
-    </div>
-</div>
+                            <div className="circle"></div>
+                            <div className="circle"></div>
+                            <div className="card-inner">
+                                <img alt='Isuru Senadeera' src="./me.png" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
