@@ -8,6 +8,7 @@ import Container from "../container/Container";
 import React from "react";
 import {SiGithub} from "react-icons/si";
 import {BsLink45Deg} from "react-icons/bs";
+import { spaceGrotesk } from ".././../fonts/spaceGrotesk";
 const ProjectCard = ({
     id,
     name,
@@ -42,6 +43,7 @@ const ProjectCard = ({
                     alt={name}
                     width={500}
                     height={500}
+                    style={{borderRadius: '15px', border: '4px solid radial-gradient(#b0e633, #53ef7d)'}}
                     className={`absolute -bottom-2 w-[70%] sm:w-[85%] md:w-[60%] lg:max-w-[55%] ${
                         id % 2 === 0 ? "right-0" : "left-0"
                     }`}
@@ -52,9 +54,7 @@ const ProjectCard = ({
                         id % 2 === 0 ? "left-0 ml-8 lg:ml-14" : "right-0 mr-8 lg:mr-14"
                     } mt-6 flex  items-center justify-center gap-4 lg:mt-10`}
                 >
-                    {available ? (
-                        <>
-                            <Link
+                    <Link
                                 href={github}
                                 target="_blank"
                                 aria-label="Open GitHub Repository"
@@ -66,6 +66,9 @@ const ProjectCard = ({
                                 data-blobity-magnetic="false">
                                 <SiGithub/>
                             </Link>
+                    {available ? (
+                        <>
+                            
                             <Link
                                 href={demo}
                                 target="_blank"
@@ -93,7 +96,7 @@ const ProjectCard = ({
                     <AnimatedTitle
                         text={name}
                         className={
-                            "max-w-[90%] text-[40px] leading-none text-white md:text-[44px] md:leading-none lg:max-w-[450px] lg:text-[48px] lg:leading-none"
+                            `about-p ${spaceGrotesk.className}`
                         }
                         wordSpace={"mr-[0.25em]"}
                         charSpace={"-mr-[0.01em]"}
@@ -101,7 +104,7 @@ const ProjectCard = ({
                     <AnimatedBody
                         text={description}
                         className={
-                            "mt-4 w-[90%] max-w-[457px] text-[16px] font-semibold text-[#95979D] "
+                            `${spaceGrotesk.className} mt-4 w-[95%] max-w-[457px] text-[16px] font-semibold text-[#95979D] `
                         }
                     />
                     <div className="mt-9 mb-9 grid grid-cols-5 gap-5">
