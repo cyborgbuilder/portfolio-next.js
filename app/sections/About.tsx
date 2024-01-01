@@ -39,10 +39,10 @@ const About = () => {
 
                     <div className="about-img">
                         
-                        <div class="card">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="card-inner">
+                        <div className="card">
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="card-inner">
     <img src="./me.png" />
     </div>
 </div>
