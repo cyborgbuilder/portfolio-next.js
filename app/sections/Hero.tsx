@@ -19,7 +19,7 @@ const Hero = () => {
                 >
                     <h1 className="hero-h1">&lt;Cyborgeek /&gt;</h1>
                     <p className="hero-p"> out.println(Hello World!); </p>
-                    <p>Elevating Ideas through the Syntax of &lt;Cyborgeek /&gt; </p>
+                    <p className="hero-p">Elevating Ideas through the Syntax of &lt;Cyborgeek /&gt; </p>
                 </div>
             </div>
         </motion.section>
